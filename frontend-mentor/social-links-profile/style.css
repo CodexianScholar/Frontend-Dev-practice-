@@ -10,7 +10,100 @@ body {
   color: white;
 }
 
+li {
+  list-style: none;
+}
 a {
   text-decoration: none;
   color: white;
+}
+
+#social-profile--container {
+  background-color: #1f1f1f;
+  width: 390px;
+  height: 610px;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile__img img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-top: 2rem;
+}
+
+.profile__text {
+  text-align: center;
+  margin: 1rem;
+}
+
+.profile__text h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.profile__location {
+  color: #c5f82a;
+  font-size: 14px;
+  margin-top: 0.5rem;
+}
+
+.profile__description {
+  margin-top: 1.5rem;
+  font-size: 14px;
+}
+
+.profile__links--menu li {
+  background-color: #333333;
+  width: 300px;
+  height: 45px;
+  text-align: center;
+  margin: 1rem 0rem;
+  border-radius: 8px;
+}
+
+.profile__links--menu li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 45px;
+  transition: all 0.2s ease-in;
+  font-weight: 700;
+}
+
+.profile__links--menu li a:hover {
+  background-color: #c5f82a;
+  color: #141414;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 500px) {
+  #social-profile--container {
+    width: 90%;
+    height: 630px;
+  }
+
+  .profile__links--menu li a {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .profile__links--menu li {
+    width: 260px;
+  }
+
+  .profile__links--menu li a {
+    width: 90%;
+    font-size: 12px;
+  }
 }
