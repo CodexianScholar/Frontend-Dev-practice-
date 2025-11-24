@@ -24,12 +24,17 @@ p {
   margin: 4rem auto;
   width: 730px;
   border-radius: 25px;
+}
+.recipe__content {
   padding: 2.5rem;
 }
-
-.omellette__img {
+.omelette__img--desktop {
   width: 650px;
   border-radius: 8px;
+}
+
+.omelette__img--mobile {
+  display: none;
 }
 
 .recipe__header .recipe__header--title {
@@ -49,12 +54,89 @@ p {
 }
 
 li {
+  font-family: "Outfit", sans-serif;
+  padding-left: 1rem;
+  margin: 1rem 0rem;
+  color: #5f574e;
+}
+.recipe__prep-time--list li {
   font-family: "Young Serif", sans-serif;
   padding-left: 1rem;
   margin: 1rem 0rem;
   color: #5f574e;
 }
 
+hr {
+  margin: 2rem 0rem;
+  border-top: 1px solid #e4ded8;
+}
 .recipe__prep-time li::marker {
   color: #7b284f;
+}
+
+.recipe__bold--text {
+  font-weight: bold;
+}
+
+.brown-text {
+  color: #854632;
+}
+
+.recipe__ingredients--list li::marker {
+  color: #854632;
+}
+
+.recipe__ingredients--list {
+  padding-left: 1rem;
+  margin: 0.3rem;
+}
+
+.recipe__instructions--list {
+  font-family: "Young Serif", sans-serif;
+  padding-left: 1rem;
+  margin: 1rem 0rem;
+  color: #5f574e;
+}
+
+.recipe__instructions--list li::marker {
+  font-weight: bold;
+  color: #854632;
+}
+
+.recipe__nutrition--header-description {
+  margin: 1rem 0rem;
+}
+
+.recipe__nutrition-table {
+  margin-top: 2rem;
+}
+
+.recipe__nutrition-table--row {
+  display: flex;
+  margin-left: 2rem;
+}
+
+.recipe__nutrition-table--row p {
+  width: 50%;
+}
+
+/* Media Queries  */
+
+@media screen and (max-width: 700px) {
+  #recipe__card {
+    margin: 0rem auto;
+    width: 100%;
+    /* border-radius 0px  fills out the slight edges that appear in mobile view */
+    border-radius: 0px;
+    font-size: 14px;
+  }
+
+  .omelette__img--desktop {
+    display: none;
+  }
+
+  .omelette__img--mobile {
+    display: block;
+    width: 100%;
+  }
 }

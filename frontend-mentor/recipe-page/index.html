@@ -14,10 +14,14 @@
   </head>
   <body>
     <section id="recipe__card">
-      <div class="recipe__img">
+      <img
+            class="omelette__img--mobile"
+            src="./assets/images/image-omelette.jpeg"
+            alt="Image of a simple Omelette"
+          />
         <div class="recipe__content">
           <img
-            class="omellette__img"
+            class="omelette__img--desktop"
             src="./assets/images/image-omelette.jpeg"
             alt="Image of a simple Omelette"
           />
@@ -28,39 +32,101 @@
               omelette combines beaten eggs cooked to perfection, optionall
               filled with your choice of cheese, vegetables or meats.
             </p>
-            <div class="recipe__prep-time">
-              <h3 class="recipe__prep-time--header">Preparation time</h3>
-              <ul class="recipe__prep-time--list">
-                <li class="recipe__prep-time--list--items">
-                  <span class="recipe__bold--brown">Total</span>: Approximately
-                  10 mintues
-                </li>
-                <li class="recipe__prep-time--list--items">
-                  <span class="recipe__bold--brown"> Preparation</span>: 5
-                  mintues
-                </li>
-                <li class="recipe__prep-time--list--items">
-                  <span class="recipe__bold--brown">Cooking</span>: 5 mintues
-                </li>
-              </ul>
-            </div>
-            <div class="recipe__ingredients">
-              <h2 class="recipe__text--gold">Ingredients</h2>
-              <ul class="recipe__ingredients--list">
-                <li class="recipe__ingredient--list--items">2-3 Large eggs</li>
-                <li class="recipe__ingredient--list--items">Salt, to taste</li>
-                <li class="recipe__ingredient--list--items">
-                  Pepper, to taste
-                </li>
-                <li class="recipe__ingredient--list--items">
-                  1 Tablespoon of butter or oil
-                </li>
-                <li class="recipe__ingredient--list--items">
-                  Optional fillings: cheese, diced vegetables, cooked meats,
-                  herbs
-                </li>
-              </ul>
+          </div>
+          <div class="recipe__prep-time">
+            <h3 class="recipe__prep-time--header">Preparation time</h3>
+            <ul class="recipe__prep-time--list">
+              <li class="recipe__prep-time--list--items">
+                <span class="recipe__bold--text">Total</span>: Approximately 10
+                mintues
+              </li>
+              <li class="recipe__prep-time--list--items">
+                <span class="recipe__bold--text"> Preparation</span>: 5 mintues
+              </li>
+              <li class="recipe__prep-time--list--items">
+                <span class="recipe__bold--text">Cooking</span>: 5 mintues
+              </li>
+            </ul>
+          </div>
+          <div class="recipe__ingredients">
+            <h2 class="recipe__ingredients--header brown-text">Ingredients</h2>
+            <ul class="recipe__ingredients--list">
+              <li class="recipe__ingredient--list-items">2-3 Large eggs</li>
+              <li class="recipe__ingredient--list-items">Salt, to taste</li>
+              <li class="recipe__ingredient--list-items">Pepper, to taste</li>
+              <li class="recipe__ingredient--list-items">
+                1 Tablespoon of butter or oil
+              </li>
+              <li class="recipe__ingredient--list-items">
+                Optional fillings: cheese, diced vegetables, cooked meats, herbs
+              </li>
+            </ul>
+          </div>
+          <hr />
+          <div class="recipe__instructions">
+            <h2 class="recipe__ingredients--header brown-text">Instructions</h2>
+            <ol class="recipe__instructions--list">
+              <li class="recipe__instructions--list--items">
+                <span class="recipe__bold--text">Beat the eggs</span>: In a
+                bowl, beat the eggs with a pinch of salt and pepper unitl they
+                are well mixed. You can add a tablespoon of water or milf for
+                fluffier texture.
+              </li>
+              <li class="recipe__instructions--list--items">
+                <span class="recipe__bold--text">Heat the pan</span>: Place a
+                non-stick frying pan over medium heat and add butter or oil.
+              </li>
+              <li class="recipe__instructions--list--items">
+                <span class="recipe__bold--text">Cook the omelette</span>: Once
+                the butter is melted and bubbling, pour in the eggs. Tilt the
+                pan to ensure the eggs evenly coat the surface.
+              </li>
+              <li class="recipe__instructions--list--items">
+                <span class="recipe__bold--text">Add fillings (optional)</span>:
+                When the eggs begin to set at the edges but are stil slighty
+                runny in the middle, sprinkle your chosen fillings over one half
+                of the omelette.
+              </li>
+              <li class="recipe__instructions--list--items">
+                <span class="recipe__bold--text">Fold and serve</span>: As the
+                omelette continues to cook, carefully left one edge and fold it
+                over the fillings. Let it cook for another mintue, then slide it
+                onto a plate.
+              </li>
+              <li class="recipe__instructions--list--items">
+                <span class="recipe__bold--text">Enjoy</span>: Serve hot, with
+                additional salt and pepper if needed.
+              </li>
+            </ol>
+          </div>
+          <hr />
+          <div class="recipe__nutrition">
+            <h2 class="recipe__nutrition--header brown-text">Nutrition</h2>
+            <p class="recipe__nutrition--header-description">
+              The table below shows nutritional values per serving without the
+              additional fillings.
+            </p>
+            <!-- Did not use a table tag because after css there was a gap in the broder-bottom -->
+            <div class="recipe__nutrition-table">
+              <div class="recipe__nutrition-table--row">
+                <p>Calories</p>
+                <p class="recipe__bold--text brown-text">277kcal</p>
+              </div>
               <hr />
+              <div class="recipe__nutrition-table--row">
+                <p>Carbs</p>
+                <p class="recipe__bold--text brown-text">0g</p>
+              </div>
+              <hr />
+              <div class="recipe__nutrition-table--row">
+                <p>Protein</p>
+                <p class="recipe__bold--text brown-text">20g</p>
+              </div>
+              <hr />
+              <div class="recipe__nutrition-table--row">
+                <p>Fat</p>
+                <p class="recipe__bold--text brown-text">22g</p>
+              </div>
             </div>
           </div>
         </div>
