@@ -49,6 +49,10 @@ p {
   border-radius: 8px;
 }
 
+.recipe__prep-time ul {
+  padding-left: 1.2rem;
+}
+
 .recipe__prep-time--header {
   color: #7b284f;
 }
